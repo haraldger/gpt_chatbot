@@ -9,7 +9,7 @@ def run(config):
     chat_bot = ChatBot(config)
 
     print("Ask your questions to the movie chatbot.")
-    print("Type 'exit' to exit the program, type 'memory' to print the memory.")
+    print("Type 'exit' to exit the program.")
     while True:
         message = input("You: ")
 
