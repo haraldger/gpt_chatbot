@@ -17,7 +17,6 @@ class KnowledgeBase:
         self.knowledge_chain = GraphCypherQAChain.from_llm(
             graph=self.knowledge_base,
             llm=self.gpt_engine,
-            verbose=True,
         )
 
     def query(self, prompt):
