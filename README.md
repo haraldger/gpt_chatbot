@@ -63,6 +63,7 @@ In the `archive` directory, some unused files can be found. An implementation of
 
 
 **Future improvements**
+
 Some suggested improvements for the future:
 1. Semantic Layer. This layer would be implemented between the ChatBot and the LLM interacting with the database. It is an unfortunate reality that LLMs are not perfect when it comes to creating code, and this is perhaps especially true when it comes to querying languages such as Cypher, that are perhaps not as frequently used or well-established as SQL. A semantic layer helps inform the model about the schema of the database, and the tools it can use to generate better queries. At the moment, the chat bot experiences some buggy behavior when it tries to generate Cypher queries that are not fully compatible with the structure of the database.
 2. Additional prompt engineering can be implemented to make the interactions with the database and the LLMs cleaner. At the moment, prompts consist of a system message that directs the model in its behavior, a context (chat history), and the user's question. These are fed directly to the LLM which generates the Cypher queries. Though there is a built-in response generator in the `GraphCypherQAChain` that formats the output nicely, additional layers can be added to the application to improve the responses of the chat bot.
