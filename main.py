@@ -21,6 +21,7 @@ def run(config):
 
         response = chat_bot.chat(message)
         print("Bot:", response)
+        print()
 
 
 def main():
