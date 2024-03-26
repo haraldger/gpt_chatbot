@@ -1,15 +1,18 @@
 import sys
 import dotenv
+import warnings
 
 from config import get_config
 from ChatBot import ChatBot
+
+warnings.filterwarnings("ignore")
 
 
 def run(config):
     chat_bot = ChatBot(config)
 
-    print("Ask your questions to the movie chatbot.")
     print("Type 'exit' to exit the program.")
+    print("Hello. I am a movie expert, here to help you with any questions you have about movies. Ask me anything relating to movies, actors, directors, ratings or plots. I can tell you about complex relationships between these, such as how many movies an actor has starred in, or what directors worked with a co-star of an actor.")
     while True:
         message = input("You: ")
 
